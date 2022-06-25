@@ -6,14 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Syailendra SMKN 6 Surakarta</title>
+  <!-- Tailwind CSS -->
   <link href="./dist/output.css" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
 </head>
 
 <body class="bg-gray-900">
   <!-- navbar -->
   <nav class="border-gray-700 px-2 sm:px-4 py-2.5 backdrop-blur-xl bg-gray-900/70 transition-all fixed top-0"
-    style="width: 100vw" id="nav">
+    style="width: 100vw; z-index: 999;" id="nav">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex items-center">
         <h1 class="self-center text-white font-bold text-2xl transition-all">Viskalearning</h1>
@@ -67,7 +75,8 @@
           </li>
           <li>
             <a href="#testimoni"
-              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Testimoni</a>
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">
+            </a>
           </li>
         </ul>
       </div>
@@ -79,17 +88,15 @@
   <section id="home">
     <div class="w-[80%] mx-auto items-center md:grid md:grid-cols-2 block" style="height: 100vh">
       <div class="flex flex-col items-center md:items-start">
-        <h1 class="text-white text-4xl md:text-5xl font-bold md:text-start text-center md:mt-0 mt-[150px]">Be Smart and
+        <h1 class="text-white text-4xl md:text-5xl font-bold md:text-start text-center md:mt-0 mt-[150px]" data-aos="fade-up" data-aos-delay="50">Be Smart and
           Creative to Become an Entrepreneur</h1>
-        <p class="text-base text-gray-400 font-normal md:text-start text-center mt-5">Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Eius, commodi!</p>
-        <a href="#">
+        <p class="text-base text-gray-400 font-normal md:text-start text-center mt-5" data-aos="fade-up" data-aos-delay="100">Kembangkan keahlian skill bersama mentor expert, kolaborasi bersama, dan dapatkan sertifikat sesuai bidang.</p>
+        <a href="#about" data-aos="fade-up" data-aos-delay="150">
           <button
-            class="text-center text-white font-medium rounded-full text-sm px-7 mt-5 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Get
-            Started</button>
+            class="text-center text-white font-medium rounded-full text-sm px-7 mt-5 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Gasskeun</button>
         </a>
       </div>
-      <div class="flex justify-center lg:mt-0 mt-[50px]">
+      <div class="flex justify-center lg:mt-0 mt-[50px]" data-aos="fade-up" data-aos-delay="50">
         <img src="img/gambar3d.png" alt="" style="width: 23rem; height: 23rem" />
       </div>
     </div>
@@ -97,18 +104,17 @@
   <!-- jumbotron -->
 
   <!-- About -->
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1F2937" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,144C960,149,1200,203,1320,229.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
   <section class="bg-gray-800 border-t border-gray-700 md:mt-0 mt-[250px] pb-24" id="about">
     <div class="md:w-[50%] w-[80%] mx-auto pt-28">
-      <h1 class="text-3xl font-medium text-center text-white mb-5">Tentang Kami</h1>
-      <p class="text-gray-400 text-lg text-center">
+      <h1 class="text-3xl font-medium text-center text-white mb-5"  data-aos="fade-down" data-aos-delay="50">Tentang Kami</h1>
+      <p class="text-gray-400 text-lg text-center" data-aos="fade-zoom-in" data-aos-delay="100">
         Kami adalah platform pembelajaran digital yang dikembangkan langsung oleh instansi <a class="text-indigo-400"
           href="https://smkn6solo.sch.id/">SMK Negeri 6 Surakarta</a> . Target kami adalah supaya generasi penerus
         bangsa memiliki skill untuk mendukung berkembanganya zaman yang dimana skill di bidang teknologi akan selalu
         dibutuhkan.
       </p>
       <br>
-      <p class="text-gray-400 text-lg text-center">
+      <p class="text-gray-400 text-lg text-center" data-aos="fade-zoom-in" data-aos-delay="150">
         Kami menyediakan berbagai macam online cource dengan harga terjangkau dan mudah di pahami, mentor kami sangat
         berpengalaman untuk menunjang berbagai online cource. Kami juga mempunyai roadmap pembelajaran agar anda tidak
         perlu bingung lagi bagaimana alur belajarnya.
@@ -121,12 +127,12 @@
   <!-- Category -->
   <section class="bg-gray-800 border-b pb-28 border-gray-700 pt-24" id="kategori">
     <div class="container mx-auto ">
-      <h3 class="text-xl text-indigo-400  mb-1 text-center">Start Action Today</h3>
-      <h1 class="text-white text-4xl font-bold text-center">Kategori Kelas Popular</h1>
+      <h3 class="text-xl text-indigo-400  mb-1 text-center" data-aos="fade-down" data-aos-delay="50">Start Action Today</h3>
+      <h1 class="text-white text-4xl font-bold text-center" data-aos="fade-down" data-aos-delay="100">Kategori Kelas Popular</h1>
 
       <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
         <!-- kelas coding -->
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700" data-aos="fade-right" data-aos-delay="150">
           <img class="rounded-t-lg" src="/img/code.jpg" alt="" />
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Kelas Coding</h5>
@@ -147,7 +153,7 @@
         <!-- kelas coding -->
 
         <!-- kelas desain -->
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700" data-aos="fade-right" data-aos-delay="200">
           <img class="rounded-t-lg" src="/img/design.jpg" alt="" />
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas Desain</h5>
@@ -168,7 +174,7 @@
         <!-- kelas desain -->
 
         <!-- kelas editing -->
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700" data-aos="fade-right" data-aos-delay="250">
           <img class="rounded-t-lg" src="/img/multimedia.jpg" alt="" />
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas Editing</h5>
@@ -189,7 +195,7 @@
         <!-- kelas editing -->
 
         <!-- kelas freelance -->
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700" data-aos="fade-right" data-aos-delay="300">
           <img class="rounded-t-lg" src="/img/freelance.jpg" alt="" />
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas freelance</h5>
@@ -215,12 +221,12 @@
   <!-- favorite class -->
   <section class="bg-gray-900 pt-20" id="favorite">
     <div class="container mx-auto ">
-      <h3 class="text-xl text-indigo-400  mb-1 text-center">Start Now or Never</h3>
-      <h1 class="text-white text-4xl font-bold text-center">Kelas Favorit</h1>
+      <h3 class="text-xl text-indigo-400  mb-1 text-center" data-aos="fade-down" data-aos-delay="50">Start Now or Never</h3>
+      <h1 class="text-white text-4xl font-bold text-center" data-aos="fade-down" data-aos-delay="100">Kelas Favorit</h1>
 
       <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
         <!-- laravel -->
-        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700" data-aos="fade-right" data-aos-delay="150">
           <div class="rounded-lg">
             <img class="p-8 rounded-[45px]" src="img/laravel.jpg" alt="product image">
           </div>
@@ -272,7 +278,7 @@
         <!-- laravel -->
 
         <!-- figma -->
-        <div class="max-w-sm rounded-lg shadow-md bg-gray-800 border-gray-700">
+        <div class="max-w-sm rounded-lg shadow-md bg-gray-800 border-gray-700" data-aos="fade-right" data-aos-delay="200">
           <div class="rounded-lg">
             <img class="p-8 rounded-[45px]" src="img/figma.png" alt="product image">
           </div>
@@ -324,7 +330,7 @@
         <!-- figma -->
 
         <!-- premiere -->
-        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700" data-aos="fade-right" data-aos-delay="250">
           <div class="rounded-lg">
             <img class="p-8 rounded-[45px]" src="img/premierepro.jpg" alt="product image">
           </div>
@@ -377,7 +383,7 @@
         <!-- premiere -->
 
         <!-- freelance -->
-        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700"data-aos="fade-right" data-aos-delay="300">
           <div class="rounded-lg">
             <img class="p-8 rounded-[45px]" src="img/freelancer.jpg" alt="product image">
           </div>
@@ -438,12 +444,12 @@
   <!-- benefit -->
   <section class="bg-gray-900 border-b pb-28 border-gray-700 pt-40" id="benefit">
     <div class="container mx-auto ">
-      <h3 class="text-xl text-indigo-400  mb-1 text-center">Why Chose Us</h3>
-      <h1 class="text-white text-4xl font-bold text-center">Benefit Yang Akan Anda Rasakan</h1>
+      <h3 class="text-xl text-indigo-400  mb-1 text-center" data-aos="fade-down" data-aos-delay="50">Why Chose Us</h3>
+      <h1 class="text-white text-4xl font-bold text-center" data-aos="fade-down" data-aos-delay="100">Benefit Yang Akan Anda Rasakan</h1>
 
       <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="150">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Harga Terjangkau</h5>
             <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor, sit amet consectetur
@@ -451,7 +457,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="200">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sertifikat</h5>
             <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor sit amet consectetur
@@ -459,7 +465,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="250">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Mentor Expert</h5>
             <p class="mb-3 font-normal text-gray-400">Lorem ipsum, dolor sit amet consectetur
@@ -467,7 +473,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="300">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Konsultasi</h5>
             <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor, sit amet consectetur
@@ -475,7 +481,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="350">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Portofolio</h5>
             <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor sit amet consectetur
@@ -483,7 +489,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="400">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Studi Kasus</h5>
             <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur
@@ -491,7 +497,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="450">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sekali Bayar</h5>
             <p class="mb-3 font-normal  text-gray-400">Lorem, ipsum dolor sit amet consectetur
@@ -499,7 +505,7 @@
           </div>
         </div>
 
-        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700" data-aos="fade-up" data-aos-delay="500">
           <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Magang</h5>
             <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur
@@ -516,11 +522,11 @@
   <!-- testimoni -->
   <section class="bg-gray-800 border-b pb-28 border-gray-700 pt-20" id="testimoni">
     <div class="w-[95%] mx-auto">
-      <h3 class="text-xl text-indigo-400  mb-1 text-center">Apa Kata Mereka?</h3>
-      <h1 class="text-white text-4xl font-bold text-center">Testimoni</h1>
+      <h3 class="text-xl text-indigo-400  mb-1 text-center" data-aos="fade-down" data-aos-delay="50">Apa Kata Mereka?</h3>
+      <h1 class="text-white text-4xl font-bold text-center" data-aos="fade-down" data-aos-delay="100">Testimoni</h1>
 
-      <div class="grid md:grid-cols-3 justify-center gap-5 mt-11">
-        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+      <div class="grid md:grid-cols-3 justify-center gap-5 mt-11" >
+        <div class="bg-gray-900 p-5 rounded-lg border border-gray-700" data-tilt >
           <div class="flex items-center mb-4 space-x-4">
             <img class="w-10 h-10 rounded-full" src="img/t1.jpg" alt="">
             <div class="space-y-1 font-medium text-white">
@@ -562,9 +568,9 @@
           </div>
           <p class="mt-2 mb-2 font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
             impedit exercitationem eveniet alias similique amet iusto excepturi unde laudantium. Sit.</p>
-        </article>
+        </div>
 
-        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700" data-tilt>
           <div class="flex items-center mb-4 space-x-4">
             <img class="w-10 h-10 rounded-full" src="img/t2.jpg" alt="">
             <div class="space-y-1 font-medium text-white">
@@ -608,7 +614,7 @@
             distinctio similique officiis exercitationem? Quae, aspernatur. Qui voluptatem libero error voluptates!</p>
         </article>
 
-        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700" data-tilt>
           <div class="flex items-center mb-4 space-x-4">
             <img class="w-10 h-10 rounded-full" src="img/t3.jpg" alt="">
             <div class="space-y-1 font-medium text-white">
@@ -667,7 +673,7 @@
       <div class="flex justify-center">
         <a href="" class="mt-3">
           <button type="button"
-          class="text-white font-medium rounded-full text-sm px-8 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Get Started</button>
+          class="text-white font-medium rounded-full text-sm px-8 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Gasskeun</button>
         </a>
       </div>
     </div>
@@ -724,8 +730,10 @@
   <!-- footer -->
 
 
-  <script src="script.js"></script>
   <script src="./dist/flowbite.js"></script>
+  <script src="./dist/tilt.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
