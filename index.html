@@ -1,114 +1,731 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syailendra SMKN 6 Surakarta</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- CSS only -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
-  </head>
-  <body class="bg-gray-900">
-    <!-- navbar -->
-    <nav class="border-gray-700 px-2 sm:px-4 py-2.5 backdrop-blur-xl bg-gray-900/30 transition-all fixed top-0" style="width: 100vw" id="nav">
-      <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="#" class="flex items-center">
-          <h1 class="self-center text-white font-bold text-2xl transition-all">Viskalearning</h1>
-        </a>
-        <div class="flex lg:order-2">
-          <button type="button" class="text-white font-medium rounded-full text-sm px-9 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Log in</button>
 
-          <!-- hamburger button -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syailendra SMKN 6 Surakarta</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-900">
+  <!-- navbar -->
+  <nav class="border-gray-700 px-2 sm:px-4 py-2.5 backdrop-blur-xl bg-gray-900/70 transition-all fixed top-0"
+    style="width: 100vw" id="nav">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="#" class="flex items-center">
+        <h1 class="self-center text-white font-bold text-2xl transition-all">Viskalearning</h1>
+      </a>
+      <div class="flex lg:order-2">
+        <button type="button"
+          class="text-white font-medium rounded-full text-sm px-9 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Log
+          in</button>
+
+        <!-- hamburger button -->
+        <button data-collapse-toggle="mobile-menu-4" type="button"
+          class="inline-flex items-center transition-all p-2 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+          aria-controls="mobile-menu-4" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <!-- hamburger button -->
+      </div>
+      <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-4">
+        <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium">
+          <li>
+            <a href="#home"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Tentang
+              Kami</a>
+          </li>
+          <li>
+            <a href="#kategori"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Kategori</a>
+          </li>
+          <li>
+            <a href="#favorite"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Kelas
+              Favorit</a>
+          </li>
+          <li>
+            <a href="#benefit"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Benefit</a>
+          </li>
+          <li>
+            <a href="#testimoni"
+              class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Testimoni</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- jumbotron -->
+  <section id="home">
+    <div class="w-[80%] mx-auto items-center md:grid md:grid-cols-2 block" style="height: 100vh">
+      <div class="flex flex-col items-center md:items-start">
+        <h1 class="text-white text-4xl md:text-5xl font-bold md:text-start text-center md:mt-0 mt-[150px]">Be Smart and
+          Creative to Become an Entrepreneur</h1>
+        <p class="text-base text-gray-400 font-normal md:text-start text-center mt-5">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Eius, commodi!</p>
+        <a href="#">
           <button
-            data-collapse-toggle="mobile-menu-4"
-            type="button"
-            class="inline-flex items-center transition-all p-2 text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
-            aria-controls="mobile-menu-4"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-            </svg>
-            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            class="text-center text-white font-medium rounded-full text-sm px-7 mt-5 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Get
+            Started</button>
+        </a>
+      </div>
+      <div class="flex justify-center lg:mt-0 mt-[50px]">
+        <img src="img/gambar3d.png" alt="" style="width: 23rem; height: 23rem" />
+      </div>
+    </div>
+  </section>
+  <!-- jumbotron -->
+
+  <!-- About -->
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1F2937" fill-opacity="1" d="M0,224L120,202.7C240,181,480,139,720,144C960,149,1200,203,1320,229.3L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
+  <section class="bg-gray-800 border-t border-gray-700 md:mt-0 mt-[250px] pb-24" id="about">
+    <div class="md:w-[50%] w-[80%] mx-auto pt-28">
+      <h1 class="text-3xl font-medium text-center text-white mb-5">Tentang Kami</h1>
+      <p class="text-gray-400 text-lg text-center">
+        Kami adalah platform pembelajaran digital yang dikembangkan langsung oleh instansi <a class="text-indigo-400"
+          href="https://smkn6solo.sch.id/">SMK Negeri 6 Surakarta</a> . Target kami adalah supaya generasi penerus
+        bangsa memiliki skill untuk mendukung berkembanganya zaman yang dimana skill di bidang teknologi akan selalu
+        dibutuhkan.
+      </p>
+      <br>
+      <p class="text-gray-400 text-lg text-center">
+        Kami menyediakan berbagai macam online cource dengan harga terjangkau dan mudah di pahami, mentor kami sangat
+        berpengalaman untuk menunjang berbagai online cource. Kami juga mempunyai roadmap pembelajaran agar anda tidak
+        perlu bingung lagi bagaimana alur belajarnya.
+      </p>
+    </div>
+    </div>
+  </section>
+  <!-- About -->
+
+  <!-- Category -->
+  <section class="bg-gray-800 border-b pb-28 border-gray-700 pt-24" id="kategori">
+    <div class="container mx-auto ">
+      <h3 class="text-xl text-indigo-400  mb-1 text-center">Start Action Today</h3>
+      <h1 class="text-white text-4xl font-bold text-center">Kategori Kelas Popular</h1>
+
+      <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
+        <!-- kelas coding -->
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+          <img class="rounded-t-lg" src="/img/code.jpg" alt="" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Kelas Coding</h5>
+            <p class="mb-3 font-normal text-gray-400">Bikin website, aplikasi, AI, Data Science dan
+              sebagainya.</p>
+            <a href="#"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white rounded-lg transition-all focus:ring-4 focus:outline-none bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">
+              Explore
+              <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- kelas coding -->
+
+        <!-- kelas desain -->
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+          <img class="rounded-t-lg" src="/img/design.jpg" alt="" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas Desain</h5>
+            <p class="mb-3 font-normal text-gray-400">Mendesain UI/UX, digital ads, dan sebagainya.
+            </p>
+            <a href="#"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white rounded-lg transition-all focus:ring-4 focus:outline-none bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">
+              Explore
+              <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- kelas desain -->
+
+        <!-- kelas editing -->
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+          <img class="rounded-t-lg" src="/img/multimedia.jpg" alt="" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas Editing</h5>
+            <p class="mb-3 font-normal text-gray-400">Mengedit video secara fundamental hingga ahli.
+            </p>
+            <a href="#"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white rounded-lg transition-all focus:ring-4 focus:outline-none bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">
+              Explore
+              <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- kelas editing -->
+
+        <!-- kelas freelance -->
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-700 border-gray-700">
+          <img class="rounded-t-lg" src="/img/freelance.jpg" alt="" />
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Kelas freelance</h5>
+            <p class="mb-3 font-normal text-gray-400">Perbanyak income dengan menjadi freelance.</p>
+            <a href="#"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white rounded-lg transition-all focus:ring-4 focus:outline-none bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">
+              Explore
+              <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- kelas freelance -->
+      </div>
+    </div>
+  </section>
+  <!-- Category -->
+
+  <!-- favorite class -->
+  <section class="bg-gray-900 pt-20" id="favorite">
+    <div class="container mx-auto ">
+      <h3 class="text-xl text-indigo-400  mb-1 text-center">Start Now or Never</h3>
+      <h1 class="text-white text-4xl font-bold text-center">Kelas Favorit</h1>
+
+      <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
+        <!-- laravel -->
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+          <div class="rounded-lg">
+            <img class="p-8 rounded-[45px]" src="img/laravel.jpg" alt="product image">
+          </div>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-white">Fullstack Laravel</h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <span
+                class=" text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-indigo-200 text-indigo-800 ml-3">4.9</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-semibold text-white">Rp. 399.000</span>
+              <a href="#"
+                class="text-white transition-all focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Ambil</a>
+            </div>
+          </div>
+        </div>
+        <!-- laravel -->
+
+        <!-- figma -->
+        <div class="max-w-sm rounded-lg shadow-md bg-gray-800 border-gray-700">
+          <div class="rounded-lg">
+            <img class="p-8 rounded-[45px]" src="img/figma.png" alt="product image">
+          </div>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-white">Figma Fundamental</h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <span
+                class=" text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-indigo-200 text-indigo-800 ml-3">4.9</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-semibold text-white">Rp. 199.000</span>
+              <a href="#"
+                class="text-white transition-all focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Ambil</a>
+            </div>
+          </div>
+        </div>
+        <!-- figma -->
+
+        <!-- premiere -->
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+          <div class="rounded-lg">
+            <img class="p-8 rounded-[45px]" src="img/premierepro.jpg" alt="product image">
+          </div>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-white">Premiere Pro Fundamental
+              </h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <span
+                class=" text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-indigo-200 text-indigo-800 ml-3">4.9</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-semibold  text-white">Rp. 299.000</span>
+              <a href="#"
+                class="text-white transition-all focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Ambil</a>
+            </div>
+          </div>
+        </div>
+        <!-- premiere -->
+
+        <!-- freelance -->
+        <div class="max-w-sm  rounded-lg shadow-md bg-gray-800 border-gray-700">
+          <div class="rounded-lg">
+            <img class="p-8 rounded-[45px]" src="img/freelancer.jpg" alt="product image">
+          </div>
+          <div class="px-5 pb-5">
+            <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-white">Menjadi Freelancer Basic
+              </h5>
+            </a>
+            <div class="flex items-center mt-2.5 mb-5">
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <span
+                class=" text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-indigo-200 text-indigo-800 ml-3">4.9</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-semibold text-white">Rp. 499.000</span>
+              <a href="#"
+                class="text-white transition-all focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-purple-600 hover:bg-purple-700 focus:ring-purple-800">Ambil</a>
+            </div>
+          </div>
+        </div>
+        <!-- freelance -->
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- favorite class -->
+
+  <!-- benefit -->
+  <section class="bg-gray-900 border-b pb-28 border-gray-700 pt-40" id="benefit">
+    <div class="container mx-auto ">
+      <h3 class="text-xl text-indigo-400  mb-1 text-center">Why Chose Us</h3>
+      <h1 class="text-white text-4xl font-bold text-center">Benefit Yang Akan Anda Rasakan</h1>
+
+      <div class="grid md:grid-cols-4 justify-center gap-5 mt-11">
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Harga Terjangkau</h5>
+            <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Quidem, aut!</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sertifikat</h5>
+            <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deserunt, veritatis.</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Mentor Expert</h5>
+            <p class="mb-3 font-normal text-gray-400">Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Tempora, commodi?</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Konsultasi</h5>
+            <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Rem, temporibus?</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Portofolio</h5>
+            <p class="mb-3 font-normal  text-gray-400">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Voluptatum, rem?</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight  text-white">Studi Kasus</h5>
+            <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ab, obcaecati?</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Sekali Bayar</h5>
+            <p class="mb-3 font-normal  text-gray-400">Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Obcaecati, vero?</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 hover:bg-gray-700 transition-all border-gray-700">
+          <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Magang</h5>
+            <p class="mb-3 font-normal text-gray-400">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quod, iste.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- benefit -->
+
+  <!-- testimoni -->
+  <section class="bg-gray-800 border-b pb-28 border-gray-700 pt-20" id="testimoni">
+    <div class="w-[95%] mx-auto">
+      <h3 class="text-xl text-indigo-400  mb-1 text-center">Apa Kata Mereka?</h3>
+      <h1 class="text-white text-4xl font-bold text-center">Testimoni</h1>
+
+      <div class="grid md:grid-cols-3 justify-center gap-5 mt-11">
+        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+          <div class="flex items-center mb-4 space-x-4">
+            <img class="w-10 h-10 rounded-full" src="img/t1.jpg" alt="">
+            <div class="space-y-1 font-medium text-white">
+              <p>Syailendra <time datetime="2014-08-16 19:00" class="block text-sm  text-gray-400">Web
+                  Developer</time></p>
+            </div>
+          </div>
+          <div class="flex items-center mb-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
               <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
             </svg>
-          </button>
-          <!-- hamburger button -->
-        </div>
-        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-4">
-          <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium">
-            <li>
-              <a href="#home" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Home</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Tentang Kami</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Kategori</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Harga</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Kelas Favorit</a>
-            </li>
-            <li>
-              <a href="#" class="block py-2 px-5 text-gray-400 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 transition-all lg:p-0 hover:text-white rounded-lg text-center">Testimoni</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar -->
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+          </div>
+          <p class="mt-2 mb-2 font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+            impedit exercitationem eveniet alias similique amet iusto excepturi unde laudantium. Sit.</p>
+        </article>
 
-    <!-- jumbotron -->
-    <section id="home">
-      <div class="w-[80%] mx-auto items-center lg:grid lg:grid-cols-2 block" style="height: 100vh">
-        <div class="flex flex-col items-center lg:items-start">
-          <h1 class="text-white text-4xl lg:text-5xl font-bold lg:text-start text-center lg:mt-0 mt-[150px]">Be Smart and Creative to Become an Entrepreneur</h1>
-          <p class="text-base text-gray-400 font-normal lg:text-start text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, commodi!</p>
-          <a href="#">
-            <button
-              class="text-center lg:text-start mx-auto text-white font-medium rounded-full text-sm px-7 mt-5 mt-5 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800"
-            >
-              Get Started
-            </button>
+        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+          <div class="flex items-center mb-4 space-x-4">
+            <img class="w-10 h-10 rounded-full" src="img/t2.jpg" alt="">
+            <div class="space-y-1 font-medium text-white">
+              <p>Jonathan <time datetime="2014-08-16 19:00"
+                  class="block text-sm text-gray-400">Frondend Developer</time></p>
+            </div>
+          </div>
+          <div class="flex items-center mb-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+          </div>
+          <p class="mt-2 mb-2 font-light text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            distinctio similique officiis exercitationem? Quae, aspernatur. Qui voluptatem libero error voluptates!</p>
+        </article>
+
+        <article class="bg-gray-900 p-5 rounded-lg border border-gray-700">
+          <div class="flex items-center mb-4 space-x-4">
+            <img class="w-10 h-10 rounded-full" src="img/t3.jpg" alt="">
+            <div class="space-y-1 font-medium text-white">
+              <p>Aziz <time datetime="2014-08-16 19:00" class="block text-sm  text-gray-400">Backend
+                  Developer</time></p>
+            </div>
+          </div>
+          <div class="flex items-center mb-1">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+              </path>
+            </svg>
+          </div>
+          <p class="mt-2 mb-2 font-light text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            quibusdam officiis quo officia quos libero explicabo sequi perspiciatis debitis delectus?</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- testimoni -->
+
+  <!-- ending -->
+  <section class="bg-gray-900 border-b pb-28 border-gray-700">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <img src="img/end.png" alt="end" class="w-[33rem]">
+      </div>
+      <h1 class="text-white font-bold text-3xl text-center">Ready to Build Your Future?</h1>
+      <p class="text-gray-400 text-base mt-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, cum!</p>
+      <div class="flex justify-center">
+        <a href="" class="mt-3">
+          <button type="button"
+          class="text-white font-medium rounded-full text-sm px-8 py-2.5 mr-2 mb-2 bg-purple-600 focus:ring-4 transition-all hover:bg-purple-700 focus:outline-none focus:ring-purple-800">Get Started</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ending -->
+
+  <!-- footer -->
+<footer class="p-4 sm:p-6 bg-gray-800">
+  <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Viskalearning</span>
           </a>
-        </div>
-        <div class="flex justify-center lg:mt-0 mt-[50px]">
-          <img src="img/gambar3d.png" alt="" style="width: 23rem; height: 23rem;" />
-        </div>
       </div>
-    </section>
-    <!-- jumbotron -->
-
-    <!-- About -->
-    <section class="bg-gray-800 border-t border-gray-700 ">
-      <div class="w-[80%] mx-auto">
-        <div class="grid grid-cols-1 mt-14 mb-7">
-          <h1 class="text-3xl font-medium text-center text-white">Tentang Kami</h1>
-        </div>
-
-        <div class="grid md:grid-cols-2 grid-cols-1">
-          <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore error soluta at in natus voluptatibus dolor, fugiat dolorem quidem accusantium.</p>
-          <p class="text-gray-400 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam velit voluptatem vitae? Ratione ducimus nisi sequi unde consectetur quas eum.</p>
-        </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+              <ul class=" text-gray-400">
+                  <li>
+                      <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
+              <ul class="text-gray-400">
+                  <li class="mb-4">
+                      <a href="https://github.com/ajisyailendra" class="hover:underline ">Github</a>
+                  </li>
+                  <li>
+                      <a href="https://Instagram.com/thesyailendra_" class="hover:underline">Instagram</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Legal</h2>
+              <ul class=" text-gray-400">
+                  <li class="mb-4">
+                      <a href="#" class="hover:underline">Privacy Policy</a>
+                  </li>
+                  <li>
+                      <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </section>
-    <!-- About -->
+  </div>
+  <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8">
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-sm  sm:text-center text-gray-400">© 2022 <a href="https://smkn6solo.sch.id" class="hover:underline">Viskalearning</a>. All Rights Reserved.
+      </span>
+  </div>
+</footer>
+  <!-- footer -->
 
-    <!-- Category -->
-    <section class="bg-gray-800 border-b border-gray-700"></section>
-    <!-- Category -->
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-  </body>
+  <script src="script.js"></script>
+  <script src="./dist/flowbite.js"></script>
+</body>
+
 </html>
